@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import TVM_Eventfrom1 from './components/TVM_Eventfrom1'
+import TVM_Eventfrom2 from './components/TVM_Eventfrom2'
+import TVM_Eventfrom3 from './components/TVM_Eventfrom3'
+import TVM_Eventfrom4 from './components/TVM_Eventfrom4'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div className='container'>
+        <h1>Even From Demo</h1>
+        <TVM_Eventfrom1/>
+        <TVM_Eventfrom2/>
+        <TVM_Eventfrom3/>
+        <TVM_Eventfrom4 name="Trần Văn Minh"/>
+      </div>
+    )
+  }
 }
-
-export default App;
